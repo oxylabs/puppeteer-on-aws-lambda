@@ -7,7 +7,7 @@ Puppeteer on AWS Lambda
 ```
 
 ```node
-`npm i --save chrome-aws-lambda puppeteer-core`
+npm i --save chrome-aws-lambda puppeteer-core
 ```
 
 ```javascript
