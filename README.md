@@ -2,7 +2,7 @@
 
 ## Problem #1 – Puppeteer is too big to push to Lambda
 
-AWS Lambda has a 50 MB limit on the zip file you push directly to it. Due to the fact that it installs Chromium, the Puppeteer package is significantly larger than that. However, this 50 MB limit doesn’t apply when you load the function from S3! See the documentation ![here](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html).
+AWS Lambda has a 50 MB limit on the zip file you push directly to it. Due to the fact that it installs Chromium, the Puppeteer package is significantly larger than that. However, this 50 MB limit doesn’t apply when you load the function from S3! See the documentation !(https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html).
 
 AWS Lambda quotas can be tight for Puppeteer:
 
@@ -19,7 +19,7 @@ The 250 MB unzipped can be bypassed by uploading directly from an S3 bucket. So 
 
 By default, Linux (including AWS Lambda) doesn’t include the necessary libraries required to allow Puppeteer to function.
 
-Fortunately, there already exists a package of Chromium built for AWS Lambda. You can find it ![here](https://www.npmjs.com/package/chrome-aws-lambda). You will need to install it and puppeteer-core in your function that you are sending to Lambda. 
+Fortunately, there already exists a package of Chromium built for AWS Lambda. You can find it !(https://www.npmjs.com/package/chrome-aws-lambda). You will need to install it and puppeteer-core in your function that you are sending to Lambda. 
 
 The regular Puppeteer package will not be needed and, in fact, counts against your 250 MB limit.
 
