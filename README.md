@@ -1,5 +1,9 @@
 # Puppeteer on AWS Lambda
 
+
+[![Oxylabs promo code](https://user-images.githubusercontent.com/129506779/250792357-8289e25e-9c36-4dc0-a5e2-2706db797bb5.png)](https://oxylabs.go2cloud.org/aff_c?offer_id=7&aff_id=877&url_id=112)
+
+
 ## Problem #1 – Puppeteer is too big to push to Lambda
 
 AWS Lambda has a 50 MB limit on the zip file you push directly to it. Due to the fact that it installs Chromium, the Puppeteer package is significantly larger than that. However, this 50 MB limit doesn’t apply when you load the function from S3! See the documentation [here](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html).
